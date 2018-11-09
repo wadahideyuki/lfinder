@@ -1,0 +1,30 @@
+header{
+  width: 100%;
+  font-size: 1.4rem;
+  .in{
+    display: flex;
+    justify-content: flex-end;
+    max-width: 1000px;
+    height: em(72/14);
+    margin: auto;
+    .contact{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: em(126/14);
+      height: 100%;
+      border: 1px solid #fff;
+      border-top: none;
+      transition: 0.3s;
+      &:hover{
+        background-color: #fff;
+        color: #534f4e;
+      }
+    }
+  }
+}
+
+
+
+
+

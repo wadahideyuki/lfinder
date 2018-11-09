@@ -1,0 +1,26 @@
+@charset "UTF-8";
+/* CSS Document */
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+@import "init/reset";//リセット
+
+//プラグイン
+@import "plugin/colorbox";
+@import "plugin/slick-theme";
+@import "plugin/slick";
+@import "plugin/animate";
+@import "plugin/fullpage";
+
+
+//コンテンツ毎
+@import "main";
+@import "sec1";
+@import "sec2";
+@import "sec3";
+@import "sec4";
+@import "sec5";
+
+
+
+
+
+

@@ -1,0 +1,32 @@
+.sec1{
+  position: relative;
+  .bg{
+    display: none;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .in{
+    width: 37%;
+    margin: auto;
+    text-shadow:
+      0 0 5px #000,
+      0 0 6px #000,
+      0 0 7px #000;
+    position: relative;
+    p{
+      margin-top: 10%;
+      font-family: $mincho;
+      font-size: 24px;
+      line-height: 3.0;
+    }
+    .txt{
+      margin-top: 8%;
+    }
+  }
+}
