@@ -1092,3 +1092,160 @@ Copyright (c) 2015 Daniel Eden
   display: block;
   font-size: 3.4rem;
 }
+
+.commonArticleStyle201811 .sec2 {
+  padding: 9rem 0 8.5rem;
+  background: #4f92d1;
+}
+
+.commonArticleStyle201811 .sec2 .inner {
+  max-width: 1000px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.commonArticleStyle201811 .sec2 .inner .txt {
+  margin-bottom: 0.5%;
+}
+
+.commonArticleStyle201811 .sec2 .inner h2 {
+  color: #fff;
+  margin-bottom: 2%;
+  font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+  font-size: 40px;
+}
+
+.commonArticleStyle201811 .sec2 .inner .col2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 767px) {
+  .commonArticleStyle201811 .sec2 .inner .col2 {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+}
+
+.commonArticleStyle201811 .sec2 .inner .col2 div {
+  position: relative;
+  width: 48.4%;
+  box-sizing: border-box;
+  padding: 0 3rem 3rem;
+  background: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  .commonArticleStyle201811 .sec2 .inner .col2 div {
+    width: 100%;
+    padding: 1.5rem 1rem 1rem;
+  }
+}
+
+.commonArticleStyle201811 .sec2 .inner .col2 div .imgbox {
+  width: 100%;
+  margin: 3rem auto 0;
+}
+
+@media screen and (max-width: 767px) {
+  .commonArticleStyle201811 .sec2 .inner .col2 div .imgbox {
+    margin: 0 auto;
+  }
+}
+
+.commonArticleStyle201811 .sec2 .inner .col2 div .imgbox img {
+  width: 100%;
+}
+
+.commonArticleStyle201811 .sec2 .inner .col2 div .img_l {
+  margin: 1rem auto 0;
+}
+
+.commonArticleStyle201811 .sec2 .inner .col2 div h3 {
+  color: #385d8a;
+  font-size: 2.6rem;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+  .commonArticleStyle201811 .sec2 .inner .col2 div h3 {
+    margin: 0 2rem;
+  }
+}
+
+.commonArticleStyle201811 .sec2 .inner .col2 div p {
+  font-size: 1.8rem;
+  margin: 3rem 0 0;
+  line-height: 1.44444;
+}
+
+@media screen and (max-width: 767px) {
+  .commonArticleStyle201811 .sec2 .inner .col2 div p {
+    margin: 3rem 2rem 2rem;
+  }
+}
+
+.commonArticleStyle201811 .sec2 .inner .col2 div p + p {
+  margin-top: 2.5rem;
+}
+
+@media screen and (max-width: 767px) {
+  .commonArticleStyle201811 .sec2 .inner .col2 div + div {
+    margin-top: 3.125vw;
+  }
+}
+
+.commonArticleStyle201811 .sec2 .inner .col2 .num1:after {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  top: 1px;
+  left: 1px;
+  width: 68px;
+  height: 68px;
+  background-image: url(../images/sec2_num1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 767px) {
+  .commonArticleStyle201811 .sec2 .inner .col2 .num1:after {
+    left: initial;
+    right: 1px;
+    background-image: url(../images/sp_sec2_num1.png);
+  }
+}
+
+.commonArticleStyle201811 .sec2 .inner .col2 .num2:after {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  top: 1px;
+  left: 0.5px;
+  width: 68px;
+  height: 68px;
+  background-image: url(../images/sec2_num2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 767px) {
+  .commonArticleStyle201811 .sec2 .inner .col2 .num2:after {
+    left: initial;
+    right: 1px;
+    background-image: url(../images/sp_sec2_num2.png);
+  }
+}
+
+.commonArticleStyle201811 .sec2 .pageBtns {
+  margin-top: 6rem;
+  justify-content: center;
+}
+
+.commonArticleStyle201811 .sec2 .pageBtns a {
+  text-decoration: none;
+}
+
+.commonArticleStyle201811 .sec2 .pageBtns a + a {
+  margin-left: 3rem;
+}
