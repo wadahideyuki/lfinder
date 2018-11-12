@@ -1,0 +1,29 @@
+//ページ共通
+.pageBtns{
+  display: flex;
+  justify-content: space-between;
+  @include mq{
+    display: block;
+  }
+  a{
+    display: block;
+    background-color: #ff8400;
+    color: #fff;
+    text-align: center;
+    border-radius: 100px;
+    > div{
+      small{
+        display: block;
+        font-size: 1.6rem;
+      }
+      strong{
+        display: block;
+        font-size: 2.6rem;
+      }
+    }
+    &.btnDL{
+    }
+    &.btnTri{
+    }
+  }
+}

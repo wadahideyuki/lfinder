@@ -30,7 +30,7 @@
   }
 }
 
-@mixin mqL($bp: 1600px) {
+@mixin mqL($bp: 1024px) {
 	@media screen and (max-width: $bp) {
 		@content;
 	}

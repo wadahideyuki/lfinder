@@ -1,80 +1,23 @@
-// ここからヘッダー
-meta(name="kyubi" content="fe085c8c03d95b3fc5bf15973f4a9237b68eac63")
-html(lang="ja")
-  head
-    meta(charset="UTF-8")
-    meta(name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=yes")
-    link(rel="alternate" type="application/rss+xml" title="リストファインダー RSSフィード" href="https://testing.list-finder.jp/feed/")
-    link(rel="stylesheet" type="text/css" href="https://testing.list-finder.jp/wp-content/themes/list-finder/style.css" media="all")
-    link(rel="stylesheet" type="text/css" href="https://testing.list-finder.jp/wp-content/themes/list-finder/style_lp_freetrial.css" media="all")
-    link(rel="stylesheet" type="text/css" href="style_lp_2018.css" media="all")
-    script(src="https://testing.list-finder.jp/wp-content/themes/list-finder/js/jquery-1.11.2.js")
-    script(src="https://testing.list-finder.jp/wp-content/themes/list-finder/js/jquery.setColHeight.js")
-    script(src="https://testing.list-finder.jp/wp-content/themes/list-finder/js/jquery.inboundFloatSubNav.js")
-    script(src="https://testing.list-finder.jp/wp-content/themes/list-finder/js/jquery.ba-hashchange.min.js")
-    script(src="https://testing.list-finder.jp/wp-content/themes/list-finder/js/autoConfirm.js")
-    script(src="https://testing.list-finder.jp/wp-content/themes/list-finder/js/jquery.validationEngine.js")
-    script(src="https://testing.list-finder.jp/wp-content/themes/list-finder/js/jquery.validationEngine-ja.js")
-    script(src="https://testing.list-finder.jp/wp-content/themes/list-finder/js/validation.js")
-    script.
-      $(function() {
-      $('a[href^="#"]').click(function() {
-      $(this).blur();
-      $('html,body').animate({
-      scrollTop: $($(this).attr('href')).offset().top
-      }, 'slow', 'swing');
-      return false;
-      });
-      });
-    script(src="https://testing.list-finder.jp/wp-content/themes/list-finder/js/resp.js")
-    //if lt IE 9
-      script(src="js/css3-mediaqueries.js")
-      script(src="js/html5shiv-printshiv.min.js")
-    title 手軽に始めるマーケティングオートメーション  | マーケティングオートメーション「リストファインダー」
-    // All in One SEO Pack 2.3.3.2 by Michael Torbert of Semper Fi Web Design[2236,2243]
-    meta(name="description" itemprop="description" content="BtoB中小企業向けシェアNo.1のマーケティングオートメーションツール「リストファインダー」。シンプルで使いやすい機能設計で、月額3万円のお手頃価格で始められます。コンサルタントの徹底サポート付きで安心！導入実績700社以上！全機能が対象の無料トライアル受付中（20日間）")
-  body.page-template.page-template-page_lp201811.page-template-page_lp201811-php.page.page-id-7530.page-child.parent-pageid-1299.logged-in.admin-bar.no-customize-support
-    #fb-root
-    script.
-      (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.5";
-      fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    // Google Tag Manager
-    noscript
-      iframe(src="//www.googletagmanager.com/ns.html?id=GTM-N4XTDC" height="0" width="0" style="display:none;visibility:hidden")
-    script.
-      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-      '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-      })(window,document,'script','dataLayer','GTM-N4XTDC');
-    // End Google Tag Manager
-    #wrapper
-      #header
-        .inner
-          .logo
-            img(src="/wp-content/uploads/2016/01/logo.png" alt="List Finder" width="158" height="38")
-          .PR15
-            img(src="/wp-content/uploads/2016/01/head_tel.png" alt="お問い合わせ・ご相談は 0120-665-702 受付時間 平日9:00～18:00" width="346" height="38")
-          .download
-            a(href="/download/")
-              span 資料ダウンロード
-      #spHeader
-        .logo
-          img(src="/wp-content/themes/list-finder/img/common/logo.png" alt="List Finder 有望商談を発掘する")
-        .nav
-          ul
-            li
-              a(href="tel:0120665702")
-                img(src="/wp-content/uploads/2017/01/ico_phone_orange.png" alt="お電話")
-                span.text お電話
-            li
-              a.download(href="/download/")
-                img(src="/wp-content/uploads/2017/01/ico_download_orange.png" alt="資料ダウンロード")
-                span.text 資料DL
-      // ここまで
-      
+#header
+  .inner
+    .logo
+      img(src='https://testing.list-finder.jp/wp-content/uploads/2016/01/logo.png', alt='List Finder', width='158', height='38')
+    .PR15
+      img(src='https://testing.list-finder.jp/wp-content/uploads/2016/01/head_tel.png', alt='お問い合わせ・ご相談は 0120-665-702 受付時間 平日9:00～18:00', width='346', height='38')
+    .download
+      a(href='/download/')
+        span 資料ダウンロード
+#spHeader
+  .logo
+    img(src='https://testing.list-finder.jp/wp-content/themes/list-finder/img/common/logo.png', alt='List Finder 有望商談を発掘する')
+  .nav
+    ul
+      li
+        a(href='tel:0120665702')
+          img(src='https://testing.list-finder.jp/wp-content/uploads/2017/01/ico_phone_orange.png', alt='お電話')
+          span.text お電話
+      li
+        a.download(href='/download/')
+          img(src='https://testing.list-finder.jp/wp-content/uploads/2017/01/ico_download_orange.png', alt='資料ダウンロード')
+          span.text 資料DL
+// ここまで

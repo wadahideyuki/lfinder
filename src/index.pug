@@ -1,35 +1,35 @@
-doctype transitional
-html(xmlns='http://www.w3.org/1999/xhtml')
-  include include/_p-hd.pug
+// ここからヘッダー
+doctype html
+html(lang='ja')
+  head
+    include include/_p-hd.pug
 
-  body
-    header
+  body.page-template.page-template-page_lp201811.page-template-page_lp201811-php.page.page-id-7530.page-child.parent-pageid-1299
+    include include/_tagmanager.pug
+
+    #wrapper
       include include/_header.pug
 
-    #fullpage
-      .section.sec1
-        include include/_sec1.pug
+      .commonArticleStyle201811
+        link(rel='stylesheet', type='text/css', href='assets/css/style.css', media='all')
+        .section.sec1
+          include include/_sec1.pug
 
-      .section.sec2
-        include include/_sec2.pug
+        .section.sec2
+          include include/_sec2.pug
 
-      .section.sec3
-        include include/_sec3.pug
+        .section.sec3
+          include include/_sec3.pug
 
-      .section.sec4
-        include include/_sec4.pug
+        .section.sec4
+          include include/_sec4.pug
 
-      .section.sec5
-        include include/_sec5.pug
-        
-    footer#siteFooter
+        .section.sec5
+          include include/_sec5.pug
+
       include include/_footer.pug
       
 
-       //*.ft
-          <!--#include virtual="footer/template/footer-contents01.html" -->
-          <!--#include virtual="footer/template/footer.html" -->
-         
           
 
 

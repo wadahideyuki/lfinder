@@ -8,11 +8,10 @@
 @import "plugin/slick-theme";
 @import "plugin/slick";
 @import "plugin/animate";
-@import "plugin/fullpage";
 
 
 //コンテンツ毎
-@import "main";
+@import "common";
 @import "sec1";
 @import "sec2";
 @import "sec3";

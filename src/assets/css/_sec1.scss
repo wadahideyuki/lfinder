@@ -1,32 +1,41 @@
 .sec1{
-  position: relative;
-  .bg{
-    display: none;
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  .in{
-    width: 37%;
-    margin: auto;
-    text-shadow:
-      0 0 5px #000,
-      0 0 6px #000,
-      0 0 7px #000;
-    position: relative;
-    p{
-      margin-top: 10%;
-      font-family: $mincho;
-      font-size: 24px;
-      line-height: 3.0;
+  background-color: #496682;
+  h1{
+    text-align: center;
+    small{
+      display: block;
+      color: #ffcd00;
+      font-size: 2.8rem;
+      
     }
-    .txt{
-      margin-top: 8%;
+    span{
+      display: block;
+      color: #fff;
+      font-size: 5.1rem;
+      @include mq{
+        font-size: 3.6rem;
+      }
+    }
+  }
+  ul{
+    text-align: center;
+    li{
+      font-size: 2.1rem;
+      span{
+        display: block;
+        background: url(../images/icn_chk1.png) left center no-repeat;
+        padding-left: 35px;
+        @include mqL{
+          background-size: vwL(35) auto;
+        }
+        @include mq{
+          display: inline-block;
+          background-size: vw(35) auto;
+        }
+        strong{
+          font-size: em(31/21);
+        }
+      }
     }
   }
 }
