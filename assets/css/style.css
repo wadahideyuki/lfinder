@@ -1071,3 +1071,24 @@ Copyright (c) 2015 Daniel Eden
 .commonArticleStyle201811 .sec1 ul li span strong {
   font-size: 1.47619em;
 }
+
+.commonArticleStyle201811 .sec1 .sec1Btn {
+  text-align: center;
+}
+
+.commonArticleStyle201811 .sec1 .sec1Btn a {
+  display: inline-block;
+  background-color: #ff8400;
+  color: #fff;
+  border-radius: 50px;
+}
+
+.commonArticleStyle201811 .sec1 .sec1Btn a > div small {
+  display: block;
+  font-size: 2.4rem;
+}
+
+.commonArticleStyle201811 .sec1 .sec1Btn a > div strong {
+  display: block;
+  font-size: 3.4rem;
+}

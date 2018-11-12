@@ -39,5 +39,24 @@
         }
       }
     }
+    .sec1Btn{
+      text-align: center;
+      a{
+        display: inline-block;
+        background-color: #ff8400;
+        color: #fff;
+        border-radius: 50px;
+        > div{
+          small{
+            display: block;
+            font-size: 2.4rem;
+          }
+          strong{
+            display: block;
+            font-size: 3.4rem;
+          }
+        }
+      }
+    }
   }
 }
