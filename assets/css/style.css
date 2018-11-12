@@ -986,18 +986,18 @@ Copyright (c) 2015 Daniel Eden
   animation-name: pulse;
 }
 
-.pageBtns {
+.commonArticleStyle201811 .pageBtns {
   display: flex;
   justify-content: space-between;
 }
 
 @media screen and (max-width: 767px) {
-  .pageBtns {
+  .commonArticleStyle201811 .pageBtns {
     display: block;
   }
 }
 
-.pageBtns a {
+.commonArticleStyle201811 .pageBtns a {
   display: block;
   background-color: #ff8400;
   color: #fff;
@@ -1005,69 +1005,69 @@ Copyright (c) 2015 Daniel Eden
   border-radius: 100px;
 }
 
-.pageBtns a > div small {
+.commonArticleStyle201811 .pageBtns a > div small {
   display: block;
   font-size: 1.6rem;
 }
 
-.pageBtns a > div strong {
+.commonArticleStyle201811 .pageBtns a > div strong {
   display: block;
   font-size: 2.6rem;
 }
 
-.sec1 {
-  background: url(../images/sec1_bg_wrap.png) 0 0 no-repeat;
+.commonArticleStyle201811 .sec1 {
+  background: url(../images/sec1_bg_wrap.png) center top no-repeat;
 }
 
-.sec1 h1 {
+.commonArticleStyle201811 .sec1 h1 {
   text-align: center;
 }
 
-.sec1 h1 small {
+.commonArticleStyle201811 .sec1 h1 small {
   display: block;
   color: #ffcd00;
   font-size: 2.8rem;
 }
 
-.sec1 h1 span {
+.commonArticleStyle201811 .sec1 h1 span {
   display: block;
   color: #fff;
   font-size: 5.1rem;
 }
 
 @media screen and (max-width: 767px) {
-  .sec1 h1 span {
+  .commonArticleStyle201811 .sec1 h1 span {
     font-size: 3.6rem;
   }
 }
 
-.sec1 ul {
+.commonArticleStyle201811 .sec1 ul {
   text-align: center;
 }
 
-.sec1 ul li {
+.commonArticleStyle201811 .sec1 ul li {
   font-size: 2.1rem;
 }
 
-.sec1 ul li span {
+.commonArticleStyle201811 .sec1 ul li span {
   display: block;
   background: url(../images/icn_chk1.png) left center no-repeat;
   padding-left: 35px;
 }
 
 @media screen and (max-width: 1024px) {
-  .sec1 ul li span {
+  .commonArticleStyle201811 .sec1 ul li span {
     background-size: 3.41797vw auto;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .sec1 ul li span {
+  .commonArticleStyle201811 .sec1 ul li span {
     display: inline-block;
     background-size: 5.46875vw auto;
   }
 }
 
-.sec1 ul li span strong {
+.commonArticleStyle201811 .sec1 ul li span strong {
   font-size: 1.47619em;
 }

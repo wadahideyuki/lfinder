@@ -1,39 +1,41 @@
-.sec1{
-  background: url(../images/sec1_bg_wrap.png) 0 0 no-repeat;
-  h1{
-    text-align: center;
-    small{
-      display: block;
-      color: #ffcd00;
-      font-size: 2.8rem;
-      
-    }
-    span{
-      display: block;
-      color: #fff;
-      font-size: 5.1rem;
-      @include mq{
-        font-size: 3.6rem;
+.commonArticleStyle201811{
+  .sec1{
+    background: url(../images/sec1_bg_wrap.png) center top no-repeat;
+    h1{
+      text-align: center;
+      small{
+        display: block;
+        color: #ffcd00;
+        font-size: 2.8rem;
+
       }
-    }
-  }
-  ul{
-    text-align: center;
-    li{
-      font-size: 2.1rem;
       span{
         display: block;
-        background: url(../images/icn_chk1.png) left center no-repeat;
-        padding-left: 35px;
-        @include mqL{
-          background-size: vwL(35) auto;
-        }
+        color: #fff;
+        font-size: 5.1rem;
         @include mq{
-          display: inline-block;
-          background-size: vw(35) auto;
+          font-size: 3.6rem;
         }
-        strong{
-          font-size: em(31/21);
+      }
+    }
+    ul{
+      text-align: center;
+      li{
+        font-size: 2.1rem;
+        span{
+          display: block;
+          background: url(../images/icn_chk1.png) left center no-repeat;
+          padding-left: 35px;
+          @include mqL{
+            background-size: vwL(35) auto;
+          }
+          @include mq{
+            display: inline-block;
+            background-size: vw(35) auto;
+          }
+          strong{
+            font-size: em(31/21);
+          }
         }
       }
     }
