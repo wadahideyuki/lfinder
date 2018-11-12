@@ -1,59 +1,188 @@
 .commonArticleStyle201811{
   .sec1{
     background: url(../images/sec1_bg_wrap.png) center top no-repeat;
+    padding: 40px 0 65px;
+    text-align: center;
     h1{
-      text-align: center;
+      margin-bottom: 70px;
+      font-weight: bold;
       small{
         display: block;
+        margin-bottom: 0.8em;
         color: #ffcd00;
         font-size: 2.8rem;
-
+        font-weight: inherit;
+        span{
+          display: inline-block;
+          padding-bottom: 0.5em;
+          border-bottom: 1px solid #ffcd00;
+        }
       }
-      span{
+      strong{
         display: block;
         color: #fff;
         font-size: 5.1rem;
+        font-weight: inherit;
+        line-height: (62/51);
         @include mq{
           font-size: 3.6rem;
         }
       }
     }
-    ul{
-      text-align: center;
-      li{
-        font-size: 2.1rem;
-        span{
-          display: block;
-          background: url(../images/icn_chk1.png) left center no-repeat;
-          padding-left: 35px;
-          @include mqL{
-            background-size: vwL(35) auto;
+    .list{
+      margin-bottom: 25px;
+      ul{
+        display: inline-block;
+        font-weight: bold;
+        li{
+          padding: 15px 5px 15px 15px;
+          font-size: 2.1rem;
+          + li{
+            border-top: 1px solid #ccc;
           }
-          @include mq{
-            display: inline-block;
-            background-size: vw(35) auto;
+          span{
+            display: block;
+            background: url(../images/icn_chk1.png) left center no-repeat;
+            padding-left: 50px;
+            @include mqL{
+              background-size: vwL(35) auto;
+            }
+            @include mq{
+              display: inline-block;
+              background-size: vw(35) auto;
+            }
+            strong{
+              font-size: em(31/21);
+              font-weight: inherit;
+            }
           }
-          strong{
-            font-size: em(31/21);
+          &:nth-child(1){
+            font-size: 2.6rem;
+            span{
+              @include mqL{
+              }
+              @include mq{
+              }
+              strong{
+                font-size: em(38/26);
+              }
+            }
           }
         }
       }
     }
     .sec1Btn{
-      text-align: center;
+      margin-bottom: 50px;
       a{
         display: inline-block;
         background-color: #ff8400;
+        width: 620px;
+        padding: 18px 0 12px;
         color: #fff;
-        border-radius: 50px;
+        font-weight: bold;
+        border-radius: 100px;
+        box-shadow: 0 4px 0 #c86c0a;
+        @include hvr;
         > div{
+          display: inline-block;
+          background: url(../images/icn_dl.png) left center no-repeat;
+          padding-left: 70px;
           small{
             display: block;
+            margin-bottom: 0.3em;
             font-size: 2.4rem;
+            font-weight: inherit;
           }
           strong{
             display: block;
             font-size: 3.4rem;
+            font-weight: inherit;
+          }
+        }
+      }
+    }
+    .sec1BtnType2{
+      display: flex;
+      justify-content: center;
+      margin-bottom: 50px;
+      a{
+        display: block;
+        background-color: #ff8400;
+        width: 330px;
+        padding: 18px 0 12px;
+        color: #fff;
+        font-weight: bold;
+        border-radius: 100px;
+        box-shadow: 0 4px 0 #c86c0a;
+        @include hvr;
+        + a{
+          margin-left: 17px;
+        }
+        > div{
+          display: inline-block;
+          background-position: left center;
+          background-repeat: no-repeat;
+          padding-left: 60px;
+          small{
+            display: block;
+            margin-bottom: 0.3em;
+            font-size: 1.4rem;
+            font-weight: inherit;
+          }
+          strong{
+            display: block;
+            font-size: 2.4rem;
+            font-weight: inherit;
+          }
+        }
+        &:nth-child(1) > div{
+          background-image: url(../images/icn_dl.png);
+          background-size: 36px auto;
+        }
+        &:nth-child(2) > div{
+          background-image: url(../images/icn_tri.png);
+          background-size: 41px auto;
+        }
+        &:nth-child(3) > div{
+          background-image: url(../images/icn_mail.png);
+          background-size: 37px auto;
+        }
+      }
+    }
+    .imgBox{
+      background-color: #fff;
+      border: 12px solid #385d8a;
+      position: relative;
+      img{width: 100%;}
+      .label{
+        width: 164px;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      dl{
+        display: flex;
+        justify-content: space-between;
+        padding: 31px 40px 33px 66px;
+        dt{
+          width: 364px;
+        }
+        dd{
+          .txt{
+            width: 500px;
+            margin-bottom: 15px;
+            padding-top: 10px;
+          }
+          .img{
+            width: 491px;
+            margin-bottom: 15px;
+          }
+          p{
+            padding-left: 10px;
+            color: #000033;
+            font-size: 1.1rem;
+            line-height: (17/11);
+            text-align: left;
           }
         }
       }

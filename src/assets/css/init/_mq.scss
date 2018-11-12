@@ -1,6 +1,6 @@
 @charset "UTF-8";
 //メディアクエリ用scss
-@import "init/var";
+@import "var";
 
 @mixin mq($bp: m) {
   @if $bp == xs {

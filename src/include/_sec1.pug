@@ -1,28 +1,52 @@
 .inner
   h1
-    small BtoB専門企業だから実現した
-    span シンプルに使える#[br]マーケティングオートメーション
+    small #[span BtoB専門企業だから実現した]
+    strong シンプルに使える#[br]マーケティングオートメーション
 
-  ul
-    li 
-      span BtoB#[strong シェアNo.1！]
-    li 
-      span 本当に#[strong 必要な機能に特化]
-    li 
-      span 安心の#[strong サポート・セキュリティ]
-
-  .btn_material 2018年度最新版　MA比較表つき！
-    span 資料ダウンロード
+  .list
+    ul
+      li 
+        span BtoB#[strong シェアNo.1！]
+      li 
+        span 本当に#[strong 必要な機能に特化]
+      li 
+        span 安心の#[strong サポート・セキュリティ]
 
   .sec1Btn
     a(href="")
       div
         small 2018年度最新版　MA比較表つき！
         strong 資料ダウンロード
+  .sec1BtnType2
+    a(href="")
+      div
+        small 2018年度最新版MA比較表つき！
+        strong 資料ダウンロード
+
+    a(href="")
+      div
+        small まずは20日間お試し！
+        strong 無料トライアル
+    a(href="")
+      div
+        small ご質問／ご相談はこちら
+        strong お問い合わせ
 
 
-  .imgbox
-    picture
-      source(srcset= imgPath + "sp_sec1_img1.png" media=spW)
-      img(src= imgPath + "sec1_img1.png" alt="")
+  .imgBox
+    .label
+      img(src="assets/images/sec1_box_img1.png" alt="")
+    dl
+      dt
+        img(src="assets/images/sec1_box_img2.png" alt="")
+      dd
+        .txt
+          img(src="assets/images/sec1_box_img3.png" alt="")
+        .img
+          img(src="assets/images/sec1_box_img4.png" alt="")
+        p ※出典：富士キメラ総研「月刊BT　2016年11月号」
+          br
+          | クラウド型マーケティングオートメーション製品市場に関する調査
+          br
+          | （2015年度クラウド型製品BtoB向け企業規模別市場シェア・数量）より
 

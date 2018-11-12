@@ -986,6 +986,10 @@ Copyright (c) 2015 Daniel Eden
   animation-name: pulse;
 }
 
+.commonArticleStyle201811 {
+  font-family: 'Noto Sans Japanese', sans-serif;
+}
+
 .commonArticleStyle201811 .pageBtns {
   display: flex;
   justify-content: space-between;
@@ -1017,80 +1021,239 @@ Copyright (c) 2015 Daniel Eden
 
 .commonArticleStyle201811 .sec1 {
   background: url(../images/sec1_bg_wrap.png) center top no-repeat;
+  padding: 40px 0 65px;
+  text-align: center;
 }
 
 .commonArticleStyle201811 .sec1 h1 {
-  text-align: center;
+  margin-bottom: 70px;
+  font-weight: bold;
 }
 
 .commonArticleStyle201811 .sec1 h1 small {
   display: block;
+  margin-bottom: 0.8em;
   color: #ffcd00;
   font-size: 2.8rem;
+  font-weight: inherit;
 }
 
-.commonArticleStyle201811 .sec1 h1 span {
+.commonArticleStyle201811 .sec1 h1 small span {
+  display: inline-block;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid #ffcd00;
+}
+
+.commonArticleStyle201811 .sec1 h1 strong {
   display: block;
   color: #fff;
   font-size: 5.1rem;
+  font-weight: inherit;
+  line-height: 1.21569;
 }
 
 @media screen and (max-width: 767px) {
-  .commonArticleStyle201811 .sec1 h1 span {
+  .commonArticleStyle201811 .sec1 h1 strong {
     font-size: 3.6rem;
   }
 }
 
-.commonArticleStyle201811 .sec1 ul {
-  text-align: center;
+.commonArticleStyle201811 .sec1 .list {
+  margin-bottom: 25px;
 }
 
-.commonArticleStyle201811 .sec1 ul li {
+.commonArticleStyle201811 .sec1 .list ul {
+  display: inline-block;
+  font-weight: bold;
+}
+
+.commonArticleStyle201811 .sec1 .list ul li {
+  padding: 15px 5px 15px 15px;
   font-size: 2.1rem;
 }
 
-.commonArticleStyle201811 .sec1 ul li span {
+.commonArticleStyle201811 .sec1 .list ul li + li {
+  border-top: 1px solid #ccc;
+}
+
+.commonArticleStyle201811 .sec1 .list ul li span {
   display: block;
   background: url(../images/icn_chk1.png) left center no-repeat;
-  padding-left: 35px;
+  padding-left: 50px;
 }
 
 @media screen and (max-width: 1024px) {
-  .commonArticleStyle201811 .sec1 ul li span {
+  .commonArticleStyle201811 .sec1 .list ul li span {
     background-size: 3.41797vw auto;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .commonArticleStyle201811 .sec1 ul li span {
+  .commonArticleStyle201811 .sec1 .list ul li span {
     display: inline-block;
     background-size: 5.46875vw auto;
   }
 }
 
-.commonArticleStyle201811 .sec1 ul li span strong {
+.commonArticleStyle201811 .sec1 .list ul li span strong {
   font-size: 1.47619em;
+  font-weight: inherit;
+}
+
+.commonArticleStyle201811 .sec1 .list ul li:nth-child(1) {
+  font-size: 2.6rem;
+}
+
+.commonArticleStyle201811 .sec1 .list ul li:nth-child(1) span strong {
+  font-size: 1.46154em;
 }
 
 .commonArticleStyle201811 .sec1 .sec1Btn {
-  text-align: center;
+  margin-bottom: 50px;
 }
 
 .commonArticleStyle201811 .sec1 .sec1Btn a {
   display: inline-block;
   background-color: #ff8400;
+  width: 620px;
+  padding: 18px 0 12px;
   color: #fff;
-  border-radius: 50px;
+  font-weight: bold;
+  border-radius: 100px;
+  box-shadow: 0 4px 0 #c86c0a;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.commonArticleStyle201811 .sec1 .sec1Btn a:hover {
+  opacity: 0.7;
+}
+
+.commonArticleStyle201811 .sec1 .sec1Btn a > div {
+  display: inline-block;
+  background: url(../images/icn_dl.png) left center no-repeat;
+  padding-left: 70px;
 }
 
 .commonArticleStyle201811 .sec1 .sec1Btn a > div small {
   display: block;
+  margin-bottom: 0.3em;
   font-size: 2.4rem;
+  font-weight: inherit;
 }
 
 .commonArticleStyle201811 .sec1 .sec1Btn a > div strong {
   display: block;
   font-size: 3.4rem;
+  font-weight: inherit;
+}
+
+.commonArticleStyle201811 .sec1 .sec1BtnType2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.commonArticleStyle201811 .sec1 .sec1BtnType2 a {
+  display: block;
+  background-color: #ff8400;
+  width: 330px;
+  padding: 18px 0 12px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 100px;
+  box-shadow: 0 4px 0 #c86c0a;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.commonArticleStyle201811 .sec1 .sec1BtnType2 a:hover {
+  opacity: 0.7;
+}
+
+.commonArticleStyle201811 .sec1 .sec1BtnType2 a + a {
+  margin-left: 17px;
+}
+
+.commonArticleStyle201811 .sec1 .sec1BtnType2 a > div {
+  display: inline-block;
+  background-position: left center;
+  background-repeat: no-repeat;
+  padding-left: 60px;
+}
+
+.commonArticleStyle201811 .sec1 .sec1BtnType2 a > div small {
+  display: block;
+  margin-bottom: 0.3em;
+  font-size: 1.4rem;
+  font-weight: inherit;
+}
+
+.commonArticleStyle201811 .sec1 .sec1BtnType2 a > div strong {
+  display: block;
+  font-size: 2.4rem;
+  font-weight: inherit;
+}
+
+.commonArticleStyle201811 .sec1 .sec1BtnType2 a:nth-child(1) > div {
+  background-image: url(../images/icn_dl.png);
+  background-size: 36px auto;
+}
+
+.commonArticleStyle201811 .sec1 .sec1BtnType2 a:nth-child(2) > div {
+  background-image: url(../images/icn_tri.png);
+  background-size: 41px auto;
+}
+
+.commonArticleStyle201811 .sec1 .sec1BtnType2 a:nth-child(3) > div {
+  background-image: url(../images/icn_mail.png);
+  background-size: 37px auto;
+}
+
+.commonArticleStyle201811 .sec1 .imgBox {
+  background-color: #fff;
+  border: 12px solid #385d8a;
+  position: relative;
+}
+
+.commonArticleStyle201811 .sec1 .imgBox img {
+  width: 100%;
+}
+
+.commonArticleStyle201811 .sec1 .imgBox .label {
+  width: 164px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.commonArticleStyle201811 .sec1 .imgBox dl {
+  display: flex;
+  justify-content: space-between;
+  padding: 31px 40px 33px 66px;
+}
+
+.commonArticleStyle201811 .sec1 .imgBox dl dt {
+  width: 364px;
+}
+
+.commonArticleStyle201811 .sec1 .imgBox dl dd .txt {
+  width: 500px;
+  margin-bottom: 15px;
+  padding-top: 10px;
+}
+
+.commonArticleStyle201811 .sec1 .imgBox dl dd .img {
+  width: 491px;
+  margin-bottom: 15px;
+}
+
+.commonArticleStyle201811 .sec1 .imgBox dl dd p {
+  padding-left: 10px;
+  color: #000033;
+  font-size: 1.1rem;
+  line-height: 1.54545;
+  text-align: left;
 }
 
 .commonArticleStyle201811 .sec2 {
