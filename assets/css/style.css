@@ -1016,7 +1016,7 @@ Copyright (c) 2015 Daniel Eden
 }
 
 .sec1 {
-  background-color: #496682;
+  background: url(../images/sec1_bg_wrap.png) 0 0 no-repeat;
 }
 
 .sec1 h1 {
