@@ -1,4 +1,126 @@
 .commonArticleStyle201811{
   .sec2{
+      padding: 9rem 0 8.5rem;
+      background: #4f92d1;
+  .inner{
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    .txt{
+      margin-bottom: 0.5%;
+    }
+    h2{
+      color: #fff;
+      margin-bottom: 2%;
+      font-family: $mincho;
+      font-size: 40px;
+    }
+    .col2 {
+      display: flex;
+      justify-content: space-between;
+      @include mq {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+      }
+      div {
+        position: relative;
+        width: 48.4%;
+        box-sizing: border-box;
+        padding: 0 3rem 3rem;
+        background: #fff;
+        @include mq {
+          width: 100%;
+          padding: 1.5rem 1rem 1rem;
+        }
+        .imgbox {
+          width: 100%;
+          margin: 3rem auto 0;
+          @include mq {
+            margin: 0 auto;
+          }
+          img {
+            width: 100%;
+          }
+        }
+        .img_l {
+          margin: 1rem auto 0;
+        }
+        h3 {
+          color: #385d8a;
+          font-size: 2.6rem;
+          font-weight: bold;
+          @include mq {
+            margin: 0 2rem;
+          }
+        }
+        p {
+          font-size: 1.8rem;
+          margin: 3rem 0 0;
+          line-height: (26/18);
+          @include mq {
+            margin: 3rem 2rem 2rem;
+          }
+        }
+        p + p {
+          margin-top: 2.5rem;
+        }
+      }
+      @include mq {
+        div + div {
+          margin-top: 3.125vw;
+          
+        }
+      }
+      .num1 {
+        &:after {
+          position: absolute;          
+          display: inline-block;
+          content: "";
+          top: 1px;
+          left: 1px;
+          width: 68px;
+          height: 68px;
+          background-image: url(../images/sec2_num1.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+          @include mq {
+            left: initial;
+            right: 1px;
+            background-image: url(../images/sp_sec2_num1.png);
+          }
+        }
+      }
+      .num2 {
+        &:after {
+          position: absolute;
+          display: inline-block;
+          content: "";
+          top: 1px;
+          left: 0.5px;
+          width: 68px;
+          height: 68px;
+          background-image: url(../images/sec2_num2.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+          @include mq {
+            left: initial;
+            right: 1px;
+            background-image: url(../images/sp_sec2_num2.png);
+          }
+        }
+      }
+    }
   }
+    .pageBtns {
+      margin-top: 6rem;
+      justify-content: center;
+      a {
+        text-decoration: none;
+      }
+      a + a {
+        margin-left: 3rem;
+      }
+    }
+}
+
 }
