@@ -6,7 +6,7 @@
 html{
   font-size: 10px;
   @include mqL{
-    font-size: vwL(10);
+//    font-size: vwL(10);
   }
   @include mq{
     font-size: vw(10);

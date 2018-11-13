@@ -1,6 +1,28 @@
 //ページ共通
 .commonArticleStyle201811{
   font-family: 'Noto Sans Japanese', sans-serif;
+  .inner{
+    @include mq{
+      padding: 0 vw(20);
+    }
+  }
+  h2{
+    margin-bottom: 1.0em;
+    color: #385d8a;
+    font-size: 5.0rem;
+    font-weight: bold;
+    text-align: center;
+    @include mq{
+      font-size: 4.0rem;
+    }
+    span{
+      display: inline-block;
+      border-bottom: 5px solid #385d8a;
+      @include mq{
+        border-bottom-width: vw(5);
+      }
+    }
+  }
   .pageBtns{
     display: flex;
     justify-content: space-between;
@@ -9,23 +31,59 @@
     }
     a{
       display: block;
+      width: 48.5%;
       background-color: #ff8400;
       color: #fff;
+      font-weight: bold;
       text-align: center;
       border-radius: 100px;
+      box-shadow: 0 4px 0 #c86c0a;
+      @include hvr;
+      @include mq{
+        width: auto;
+        box-shadow: 0 vw(2) 0 #c86c0a;
+      }
+      + a{
+        @include mq{
+          margin-top: vw(34);
+        }
+      }
       > div{
+        display: inline-block;
+        background-position: left center;
+        background-repeat: no-repeat;
+        padding: percentage(16/485) 0 percentage(16/485);
+        @include mq{
+          background-size: 64px auto !important;
+          padding: vw(20) 0 vw(20) vw(82) !important;
+        }
         small{
           display: block;
+          margin-bottom: 0.3em;
           font-size: 1.6rem;
+          font-weight: inherit;
+          @include mq{
+            font-size: 1.988rem;
+          }
         }
         strong{
           display: block;
           font-size: 2.6rem;
+          font-weight: inherit;
+          @include mq{
+            font-size: 3.23rem;
+          }
         }
       }
-      &.btnDL{
+      &.btnDL > div{
+        background-image: url(../images/icn_dl.png);
+        background-size: 50px auto;
+        padding-left: 65px;
       }
-      &.btnTri{
+      &.btnTri > div{
+        background-image: url(../images/icn_tri.png);
+        background-size: 51px auto;
+        padding-left: 66px;
       }
     }
   }
