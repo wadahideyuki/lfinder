@@ -2,18 +2,26 @@
   .sec2{
       padding: 9rem 0 8.5rem;
       background: #4f92d1;
-  .inner{
-    max-width: 1000px;
-    width: 90%;
-    margin: 0 auto;
-    .txt{
-      margin-bottom: 0.5%;
+    @include mq {
+      padding: vw(50) 0 vw(60);
     }
+  .inner{
     h2{
       color: #fff;
-      margin-bottom: 2%;
-      font-family: $mincho;
-      font-size: 40px;
+      margin-bottom: 2.5rem;
+      @include mq {
+        margin-bottom: vw(50);
+      }
+      span {
+        font-size: 5rem;
+        border-bottom: 0.5rem solid #fff;
+        padding: 1rem;
+        @include mq {
+          font-size: 4rem;
+          border-bottom: vw(5) solid #fff;
+          padding: vw(15);
+        }
+      }
     }
     .col2 {
       display: flex;
@@ -30,13 +38,20 @@
         background: #fff;
         @include mq {
           width: 100%;
-          padding: 1.5rem 1rem 1rem;
+          padding: vw(50) vw(40) vw(50);
         }
         .imgbox {
           width: 100%;
           margin: 3rem auto 0;
           @include mq {
+            position: absolute;
+            width: 95%;
+            top: vw(-40);
+            left: 0;
+            right: 0;
+            opacity: 0.15;
             margin: 0 auto;
+            background: transparent;
           }
           img {
             width: 100%;
@@ -50,6 +65,7 @@
           font-size: 2.6rem;
           font-weight: bold;
           @include mq {
+            font-size: vw(30);
             margin: 0 2rem;
           }
         }
@@ -58,7 +74,9 @@
           margin: 3rem 0 0;
           line-height: (26/18);
           @include mq {
-            margin: 3rem 2rem 2rem;
+            font-size: vw(26);
+            margin: 0;
+            line-height: (36/26);
           }
         }
         p + p {
@@ -67,7 +85,7 @@
       }
       @include mq {
         div + div {
-          margin-top: 3.125vw;
+          margin-top: vw(20);
           
         }
       }
@@ -76,16 +94,18 @@
           position: absolute;          
           display: inline-block;
           content: "";
-          top: 1px;
+          top: 0.5px;
           left: 1px;
-          width: 68px;
-          height: 68px;
+          width: 6.8rem;
+          height: 6.8rem;
           background-image: url(../images/sec2_num1.png);
           background-repeat: no-repeat;
           background-size: cover;
           @include mq {
             left: initial;
             right: 1px;
+            width: vw(89);
+            height: vw(89);
             background-image: url(../images/sp_sec2_num1.png);
           }
         }
@@ -95,32 +115,30 @@
           position: absolute;
           display: inline-block;
           content: "";
-          top: 1px;
-          left: 0.5px;
-          width: 68px;
-          height: 68px;
+          top: 0.5px;
+          left: 1px;
+          width: 6.8rem;
+          height: 6.8rem;
           background-image: url(../images/sec2_num2.png);
           background-repeat: no-repeat;
           background-size: cover;
           @include mq {
             left: initial;
             right: 1px;
+            width: vw(89);
+            height: vw(89);
             background-image: url(../images/sp_sec2_num2.png);
           }
         }
       }
     }
-  }
     .pageBtns {
       margin-top: 6rem;
-      justify-content: center;
-      a {
-        text-decoration: none;
-      }
-      a + a {
-        margin-left: 3rem;
+      @include mq {
+        margin-top: vw(30);
       }
     }
+  }
 }
 
 }
