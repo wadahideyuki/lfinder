@@ -6,6 +6,12 @@
       padding: 0 vw(20);
     }
   }
+  .sp{
+    display: none;
+    @include mq{
+      display: block;
+    }
+  }
   h2{
     margin-bottom: 1.0em;
     color: #385d8a;
