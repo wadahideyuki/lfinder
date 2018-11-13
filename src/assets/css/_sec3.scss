@@ -57,6 +57,7 @@
             color: #fff;
             font-size: 1.8rem;
             font-weight: bold;
+            line-height: (24/18);
             position: relative;
             @include mq{
               margin-right: vw(23);
@@ -200,11 +201,14 @@
                   width: 100%;
                   color: #000033;
                   font-size: 1.5rem;
+                  line-height: (22/16);
                   box-sizing: border-box;
                   @include mq{
+                    display: flex;
+                    justify-content: flex-start;
                     padding-left: vw(25);
                     font-size: 2.8rem;
-                    text-align: left;
+                    line-height: (36/28);
                   }
                 }
               }
