@@ -6,13 +6,13 @@
     @include mq{
       background: url(../images/sec1_bg_wrap_sp.png) center top no-repeat;
       background-size: 100% auto;
-      padding: vw(35) 0;
+      padding: vw(39) 0 vw(50);
     }
     h1{
       margin-bottom: 70px;
       font-weight: bold;
       @include mq{
-        margin-bottom: vw(62);
+        margin-bottom: vw(240);
       }
       small{
         display: block;
@@ -21,14 +21,15 @@
         font-size: 2.8rem;
         font-weight: inherit;
         @include mq{
-          margin-bottom: 0.55em;
+          margin-bottom: 0.5em;
+          font-size: 3.6rem;
         }
         span{
           display: inline-block;
           padding-bottom: 0.5em;
           border-bottom: 1px solid #ffcd00;
           @include mq{
-            padding-bottom: 0.35em;
+            padding-bottom: 0.33em;
           }
         }
       }
@@ -39,54 +40,83 @@
         font-weight: inherit;
         line-height: (62/51);
         @include mq{
-          font-size: 3.6rem;
-          line-height: (44/36);
+          font-size: 4.0rem;
+          line-height: (64/41);
+          letter-spacing: -0.02em;
         }
       }
     }
     .list{
       margin-bottom: 25px;
       @include mq{
-        margin-bottom: vw(13);
+        margin-bottom: vw(19);
       }
       ul{
         display: inline-block;
+        padding: 0 vw(20);
         font-weight: bold;
+        @include mq{
+          display: block;
+        }
         li{
           padding: 15px 5px 15px 15px;
           font-size: 2.1rem;
           @include mq{
-            padding: 0 0 vw(19);
-            font-size: 2.0rem !important;
+            padding: 0;
           }
           + li{
             border-top: 1px solid #ccc;
-            @include mq{
-              border-top: none;
-            }
           }
           span{
             display: block;
             background: url(../images/icn_chk1.png) left center no-repeat;
+            background-size: 35px auto;
             padding-left: 50px;
             @include mq{
-              display: inline-block;
-              background-size: vw(35) auto;
+              background-size: vw(41) auto;
+              padding: vw(22) 0 vw(22) vw(50);
             }
             strong{
               font-size: em(31/21);
               font-weight: inherit;
               @include mq{
-                font-size: em(30/20) !important;
               }
             }
           }
           &:nth-child(1){
             font-size: 2.6rem;
+            @include mq{
+              font-size: 3.1rem;
+            }
             span{
               strong{
                 font-size: em(38/26);
                 @include mq{
+                  font-size: 4.5rem;
+                }
+              }
+            }
+          }
+          &:nth-child(2){
+            @include mq{
+              font-size: 2.4rem;
+            }
+            span{
+              strong{
+                @include mq{
+                  font-size: 3.6rem;
+                }
+              }
+            }
+          }
+          &:nth-child(3){
+            @include mq{
+              font-size: 2.5rem;
+            }
+            span{
+              strong{
+                @include mq{
+                  font-size: 3.6rem;
                 }
               }
             }
@@ -168,7 +198,7 @@
         }
         + a{
           @include mq{
-            margin-top: vw(10);
+            margin-top: vw(20);
           }
         }
         > div{
@@ -226,9 +256,13 @@
         top: 0;
         left: 0;
         @include mq{
-          width: vw(181);
-          top: 1px;
-          left: 1px;
+          background-color: #385d8a;
+          width: auto;
+          padding: vw(12) 0 vw(18);
+          position: static;
+          img{
+            width: vw(326);
+          }
         }
       }
       dl{
@@ -237,15 +271,12 @@
         padding: 31px 40px 33px 66px;
         @include mq{
           display: block;
-          padding: vw(46) vw(25) vw(36) vw(25);
+          padding: vw(25);
         }
         dt{
           width: 364px;
           @include mq{
-            width: auto;
-            img{
-              width: vw(444);
-            }
+            display: none;
           }
         }
         dd{
@@ -256,7 +287,7 @@
             @include mq{
               width: auto;
               margin-bottom: vw(19);
-              padding-top: vw(33);
+              padding-top: 0;
               img{
                 width: vw(537);
               }
@@ -267,7 +298,7 @@
             margin-bottom: 15px;
             @include mq{
               width: auto;
-              margin-bottom: vw(23);
+              margin-bottom: vw(15);
               img{
                 width: vw(550);
               }

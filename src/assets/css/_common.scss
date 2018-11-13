@@ -60,7 +60,6 @@
         background-repeat: no-repeat;
         padding: percentage(16/485) 0 percentage(16/485);
         @include mq{
-          background-size: 64px auto !important;
           padding: vw(20) 0 vw(20) vw(82) !important;
         }
         small{
@@ -85,11 +84,17 @@
         background-image: url(../images/icn_dl.png);
         background-size: 50px auto;
         padding-left: 65px;
+        @include mq{
+          background-size: vw(66) auto;
+        }
       }
       &.btnTri > div{
         background-image: url(../images/icn_tri.png);
         background-size: 51px auto;
         padding-left: 66px;
+        @include mq{
+          background-size: vw(63) auto;
+        }
       }
     }
   }

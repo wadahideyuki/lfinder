@@ -1,4 +1,99 @@
 .commonArticleStyle201811{
   .sec5{
+    background-color: #b8daff;
+    padding: 75px 0 110px;
+    @include mq{
+      padding: vw(50) 0 vw(55);
+    }
+    ul{
+      margin-bottom: 45px;
+      @include mq{
+        margin-bottom: vw(36);
+      }
+      li{
+        background-color: #fff;
+        position: relative;
+        @include mq{
+        }
+        + li{
+          margin-top: 40px;
+          @include mq{
+            margin-top: vw(32);
+          }
+        }
+        .label{
+          position: absolute;
+          top: 1px;
+          right: 1px;
+          @include mq{
+            width: vw(90);
+            top: 0;
+            right: 0;
+            img{
+              width: 100%;
+            }
+          }
+        }
+        dl{
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+          padding: 30px;
+          @include mq{
+            display: block;
+            padding: vw(30);
+          }
+        }
+        dt{
+          flex-shrink: 0;
+          width: 430px;
+          @include mq{
+            width: auto;
+            margin-bottom: vw(30);
+          }
+          img{
+            width: 100%;
+          }
+        }
+        dd{
+          width: 100%;
+          padding-left: 35px;
+          box-sizing: border-box;
+          @include mq{
+            padding-left: 0;
+          }
+          h3{
+            margin-bottom: em(10/26);
+            color: #367bbb;
+            font-size: 2.6rem;
+            font-weight: bold;
+            line-height: (36/26);
+            @include mq{
+              margin-bottom: vw(16);
+              font-size: 3.8rem;
+              line-height: (45/38);
+            }
+          }
+          strong{
+            display: block;
+            margin-bottom: em(17/19);
+            font-size: 1.9rem;
+            font-weight: bold;
+            @include mq{
+              margin-bottom: vw(15);
+              font-size: 2.8rem;
+            }
+          }
+          p{
+            font-size: 1.5rem;
+            line-height: (24/15);
+            @include mq{
+              font-size: 2.2rem;
+              line-height: (31/22);
+            }
+          }
+        }
+      }
+    }
   }
 }

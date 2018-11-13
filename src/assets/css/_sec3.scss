@@ -10,6 +10,8 @@
       margin-bottom: 38px;
       padding: 30px;
       @include mq{
+        margin-bottom: vw(50);
+        padding: vw(30) vw(30) vw(10);
       }
       h3{
         margin-bottom: 26px;
@@ -18,6 +20,11 @@
         font-weight: bold;
         border-left: 5px solid #4c8ac7;
         @include mq{
+          margin-bottom: vw(26);
+          font-size: 2.8rem;
+          font-weight: normal;
+          line-height: (36/28);
+          border-left-width: vw(6.12);
         }
       }
       ol{
@@ -31,9 +38,13 @@
           padding: 0 percentage(19/940);
           @include mq{
             width: auto;
+            padding: 0 !important;
           }
           + li{
             border-left: 1px dotted #ccc;
+            @include mq{
+              border-left: none;
+            }
           }
           &:nth-child(1){padding-left: 0;}
           &:nth-child(3){padding-right: 0;}
@@ -46,8 +57,15 @@
             color: #fff;
             font-size: 1.8rem;
             font-weight: bold;
+            line-height: (24/18);
             position: relative;
             @include mq{
+              margin-right: vw(23);
+              margin-bottom: vw(10);
+              padding-left: vw(25);
+              height: vw(100);
+              font-size: 2.6rem;
+              line-height: (34/26);
             }
             &:before{
               content: "";
@@ -61,6 +79,7 @@
               right: -2px;
               z-index: 1;
               @include mq{
+                right: vw(7);
               }
             }
             &:after{
@@ -71,6 +90,8 @@
               top: 0;
               right: -23px;
               @include mq{
+                border-width: vw(50) 0 vw(50) vw(23);
+                right: vw(-22);
               }
             }
           }
@@ -81,6 +102,8 @@
               width: 32px;
               height: 72px;
               @include mq{
+                width: vw(32);
+                height: vw(72);
               }
             }
             &:after{
@@ -94,6 +117,8 @@
               width: 45px;
               height: 72px;
               @include mq{
+                width: vw(45);
+                height: vw(72);
               }
             }
             &:after{
@@ -107,6 +132,8 @@
               width: 44px;
               height: 74px;
               @include mq{
+                width: vw(44);
+                height: vw(74);
               }
             }
             &:after{
@@ -119,6 +146,13 @@
               border: 1px solid #ccc;
               position: relative;
               @include mq{
+                margin-top: 0;
+                border: none;
+              }
+              + li{
+                @include mq{
+                  border-top: 1px solid #ccc;
+                }
               }
               dl{
                 display: flex;
@@ -127,18 +161,54 @@
                 padding: 0 15px;
                 text-align: center;
                 @include mq{
+                  height: vw(100);
+                  padding: 0;
+                  position: relative;
+                  &:before{
+                    content: "";
+                    display: block;
+                    width: vw(18);
+                    height: vw(18);
+                    margin: auto;
+                    border-style: solid;
+                    border-width: 0 0 vw(6) vw(6);
+                    border-color: #4c8ac7;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    right: 0;
+                    transform: translate(vw(-6),vw(-6)) rotate(-45deg);
+                  }
+                }
+                &.show{
+                  @include mq{
+                    &:before{
+                      transform: translate(vw(-6),vw(6)) rotate(135deg);
+                    }
+                  }
                 }
                 dt{
                   flex-shrink: 0;
                   width: 105px;
                   @include mq{
+                    width: vw(105);
+                    img{
+                      width: 100%;
+                    }
                   }
                 }
                 dd{
                   width: 100%;
                   color: #000033;
                   font-size: 1.5rem;
+                  line-height: (22/16);
+                  box-sizing: border-box;
                   @include mq{
+                    display: flex;
+                    justify-content: flex-start;
+                    padding-left: vw(25);
+                    font-size: 2.8rem;
+                    line-height: (36/28);
                   }
                 }
               }
@@ -158,13 +228,19 @@
                 left: 0;
                 @include mq{
                   background-color: transparent;
-                  color: #333;
+                  padding: 0 0 vw(20);
+                  color: #666;
+                  font-size: 2.2rem;
+                  line-height: (32/22);
                   position: static;
                 }
               }
               &:hover{
                 p{
                   display: block;
+                  @include mq{
+                    display: none;
+                  }
                 }
               }
             }
