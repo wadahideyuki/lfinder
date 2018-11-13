@@ -770,6 +770,11 @@ Copyright (c) 2015 Daniel Eden
   @media screen and (max-width: 640px) {
     .commonArticleStyle201811 .inner {
       padding: 0 3.125vw; } }
+  .commonArticleStyle201811 .sp {
+    display: none; }
+    @media screen and (max-width: 640px) {
+      .commonArticleStyle201811 .sp {
+        display: block; } }
   .commonArticleStyle201811 h2 {
     margin-bottom: 1.0em;
     color: #385d8a;
@@ -1199,3 +1204,124 @@ Copyright (c) 2015 Daniel Eden
 .commonArticleStyle201811 .sec3 {
   background-color: #edf3fa;
   padding: 85px 0 80px; }
+  @media screen and (max-width: 640px) {
+    .commonArticleStyle201811 .sec3 {
+      padding: 10.15625vw 0 8.59375vw; } }
+  .commonArticleStyle201811 .sec3 .box {
+    background-color: #fff;
+    margin-bottom: 38px;
+    padding: 30px; }
+    .commonArticleStyle201811 .sec3 .box h3 {
+      margin-bottom: 26px;
+      padding-left: 15px;
+      font-size: 2.2rem;
+      font-weight: bold;
+      border-left: 5px solid #4c8ac7; }
+    .commonArticleStyle201811 .sec3 .box ol {
+      display: flex; }
+      @media screen and (max-width: 640px) {
+        .commonArticleStyle201811 .sec3 .box ol {
+          display: block; } }
+      .commonArticleStyle201811 .sec3 .box ol > li {
+        counter-increment: num1;
+        width: 30.6382978723%;
+        padding: 0 2.0212765957%; }
+        @media screen and (max-width: 640px) {
+          .commonArticleStyle201811 .sec3 .box ol > li {
+            width: auto; } }
+        .commonArticleStyle201811 .sec3 .box ol > li + li {
+          border-left: 1px dotted #ccc; }
+        .commonArticleStyle201811 .sec3 .box ol > li:nth-child(1) {
+          padding-left: 0; }
+        .commonArticleStyle201811 .sec3 .box ol > li:nth-child(3) {
+          padding-right: 0; }
+        .commonArticleStyle201811 .sec3 .box ol > li h4 {
+          display: flex;
+          align-items: center;
+          height: 100px;
+          margin-right: 23px;
+          padding-left: 15px;
+          color: #fff;
+          font-size: 1.8rem;
+          font-weight: bold;
+          position: relative; }
+          .commonArticleStyle201811 .sec3 .box ol > li h4:before {
+            content: "";
+            background-position: left top;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            margin: auto;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: -2px;
+            z-index: 1; }
+          .commonArticleStyle201811 .sec3 .box ol > li h4:after {
+            content: "";
+            border-style: solid;
+            border-width: 50px 0 50px 23px;
+            position: absolute;
+            top: 0;
+            right: -23px; }
+        .commonArticleStyle201811 .sec3 .box ol > li:nth-child(1) h4 {
+          background-color: #4ac0fe; }
+          .commonArticleStyle201811 .sec3 .box ol > li:nth-child(1) h4:before {
+            background-image: url(../images/sec3_list1_num.png);
+            width: 32px;
+            height: 72px; }
+          .commonArticleStyle201811 .sec3 .box ol > li:nth-child(1) h4:after {
+            border-left-color: #4ac0fe; }
+        .commonArticleStyle201811 .sec3 .box ol > li:nth-child(2) h4 {
+          background-color: #2b94f4; }
+          .commonArticleStyle201811 .sec3 .box ol > li:nth-child(2) h4:before {
+            background-image: url(../images/sec3_list2_num.png);
+            width: 45px;
+            height: 72px; }
+          .commonArticleStyle201811 .sec3 .box ol > li:nth-child(2) h4:after {
+            border-left-color: #2b94f4; }
+        .commonArticleStyle201811 .sec3 .box ol > li:nth-child(3) h4 {
+          background-color: #164f78; }
+          .commonArticleStyle201811 .sec3 .box ol > li:nth-child(3) h4:before {
+            background-image: url(../images/sec3_list3_num.png);
+            width: 44px;
+            height: 74px; }
+          .commonArticleStyle201811 .sec3 .box ol > li:nth-child(3) h4:after {
+            border-left-color: #164f78; }
+        .commonArticleStyle201811 .sec3 .box ol > li ul > li {
+          margin-top: 18px;
+          border: 1px solid #ccc;
+          position: relative; }
+          .commonArticleStyle201811 .sec3 .box ol > li ul > li dl {
+            display: flex;
+            align-items: center;
+            height: 100px;
+            padding: 0 15px;
+            text-align: center; }
+            .commonArticleStyle201811 .sec3 .box ol > li ul > li dl dt {
+              flex-shrink: 0;
+              width: 105px; }
+            .commonArticleStyle201811 .sec3 .box ol > li ul > li dl dd {
+              width: 100%;
+              color: #000033;
+              font-size: 1.5rem; }
+          .commonArticleStyle201811 .sec3 .box ol > li ul > li p {
+            display: none;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 10px 20px;
+            color: #fff;
+            font-size: 1.4rem;
+            line-height: 1.4285714286;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            position: absolute;
+            top: 0;
+            left: 0; }
+            @media screen and (max-width: 640px) {
+              .commonArticleStyle201811 .sec3 .box ol > li ul > li p {
+                background-color: transparent;
+                color: #333;
+                position: static; } }
+          .commonArticleStyle201811 .sec3 .box ol > li ul > li:hover p {
+            display: block; }
