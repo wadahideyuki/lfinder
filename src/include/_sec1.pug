@@ -35,7 +35,9 @@
 
   .imgBox
     .label
-      img(src="assets/images/sec1_box_img1.png" alt="")
+      picture
+        source(srcset="assets/images/sec1_box_img1_sp.png" media=spW)
+        img(src="assets/images/sec1_box_img1.png" alt="")
     dl
       dt
         img(src="assets/images/sec1_box_img2.png" alt="")
