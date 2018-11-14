@@ -82,490 +82,6 @@ input, textarea, select {
 
 /* ページ共通
 ---------------------------------------------------- */
-/*
-    ColorBox Core Style
-    The following rules are the styles that are consistant between themes.
-    Avoid changing this area to maintain compatability with future versions of ColorBox.
-*/
-#colorbox, #cbox2Overlay, #cbox2Wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-  overflow: hidden;
-}
-
-#cbox2Overlay {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-}
-
-#cbox2MiddleLeft, #cbox2BottomLeft {
-  clear: left;
-}
-
-#cbox2Content {
-  position: relative;
-  overflow: hidden;
-  padding-bottom: 20px;
-}
-
-#cbox2LoadedContent {
-  overflow: auto;
-}
-
-#cbox2LoadedContent iframe {
-  display: block;
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
-
-#cbox2Title {
-  margin: 0;
-}
-
-#cbox2LoadingOverlay, #cbox2LoadingGraphic {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-
-#cbox2Previous, #cbox2Next, #cbox2Close, #cbox2Slideshow {
-  cursor: pointer;
-}
-
-/* 
-    Example user style
-    The following rules are ordered and tabbed in a way that represents the
-    order/nesting of the generated HTML, so that the structure easier to understand.
-*/
-#cbox2Overlay {
-  background: black url(//deagostini.jp/site/common/overlay.png) 0 0 repeat;
-}
-
-#cbox2TopLeft {
-  width: 21px;
-  height: 21px;
-  background: none -100px 0 no-repeat;
-}
-
-#cbox2TopRight {
-  width: 21px;
-  height: 21px;
-  background: none -129px 0 no-repeat;
-}
-
-#cbox2BottomLeft {
-  width: 21px;
-  height: 21px;
-  background: none -100px -29px no-repeat;
-}
-
-#cbox2BottomRight {
-  width: 21px;
-  height: 21px;
-  background: none -129px -29px no-repeat;
-}
-
-#cbox2MiddleLeft {
-  width: 21px;
-  background: none left top repeat-y;
-}
-
-#cbox2MiddleRight {
-  width: 21px;
-  background: none right top repeat-y;
-}
-
-#cbox2TopCenter {
-  height: 21px;
-  background: none 0 0 repeat-x;
-}
-
-#cbox2BottomCenter {
-  height: 21px;
-  background: none 0 -29px repeat-x;
-}
-
-/* #cbox2Content{background:;}*/
-#cbox2LoadedContent {
-  margin-bottom: 28px;
-  padding: 30px 60px 0px;
-}
-
-#cbox2Title {
-  position: absolute;
-  top: 636px;
-  left: 60px;
-  text-align: left;
-  width: 860px;
-  font-size: 14px;
-  color: #FFF;
-  font-weight: bold;
-  text-shadow: 1px 1px 3px #000;
-}
-
-#cbox2Current {
-  position: absolute;
-  top: 10px;
-  left: 60px;
-  color: #FFFFFF;
-}
-
-#cbox2Slideshow {
-  position: absolute;
-  bottom: 3px;
-  right: 30px;
-  color: #FFFFFF;
-}
-
-#cbox2Previous {
-  left: 10px;
-  transform: rotate(-135deg);
-}
-
-#cbox2Next {
-  right: 10px;
-  transform: rotate(45deg);
-}
-
-#cbox2LoadingOverlay {
-  background: url(//deagostini.jp/site/common/loading_background.png) center center no-repeat;
-}
-
-#cbox2LoadingGraphic {
-  background: url(//deagostini.jp/site/common/loading.gif) center center no-repeat;
-}
-
-#cbox2Close {
-  position: absolute;
-  bottom: 11px;
-  right: 60px;
-  background: url(../images/colorbox_close.png);
-  background-position: left 4px;
-  background-repeat: no-repeat;
-  width: 87px;
-  height: 32px;
-  text-indent: -9999px;
-  border: 0px;
-  border-radius: 5px;
-}
-
-/*
-    The following fixes png-transparency for IE6.  
-    It is also necessary for png-transparency in IE7 & IE8 to avoid 'black halos' with the fade transition
-    
-    Since this method does not support CSS background-positioning, it is incompatible with CSS sprites.
-    Colorbox preloads navigation hover classes to account for this.
-    
-    !! Important Note: AlphaImageLoader src paths are relative to the HTML document,
-    while regular CSS background images are relative to the CSS document.
-*/
-#cbox2Previous,
-#cbox2Next {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background: none;
-  width: 40px;
-  height: 40px;
-  margin: auto;
-  padding: 0;
-  text-indent: -9999px;
-  border-style: solid;
-  border-width: 8px 8px 0 0;
-  border-color: #fff #fff transparent transparent;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  z-index: 10000;
-}
-
-#cbox2Previous:hover,
-#cbox2Next:hover {
-  opacity: 0.7;
-}
-
-input::-moz-focus-inner, button::-moz-focus-inner {
-  border: 0;
-}
-
-/* Slider */
-/* Icons */
-@font-face {
-  font-family: 'slick';
-  font-weight: normal;
-  font-style: normal;
-}
-
-/* Arrows */
-.slick-prev,
-.slick-next {
-  font-size: 0;
-  line-height: 0;
-  position: absolute;
-  top: 50%;
-  display: block;
-  width: 20px;
-  height: 20px;
-  padding: 0;
-  margin-top: -10px\9;
-  /*lte IE 8*/
-  -webkit-transform: translate(0, -50%);
-  -ms-transform: translate(0, -50%);
-  transform: translate(0, -50%);
-  cursor: pointer;
-  color: transparent;
-  border: none;
-  outline: none;
-  background: transparent;
-}
-
-.slick-prev:hover,
-.slick-prev:focus,
-.slick-next:hover,
-.slick-next:focus {
-  color: transparent;
-  outline: none;
-  background: transparent;
-}
-
-.slick-prev:hover:before,
-.slick-prev:focus:before,
-.slick-next:hover:before,
-.slick-next:focus:before {
-  opacity: 1;
-}
-
-.slick-prev.slick-disabled:before,
-.slick-next.slick-disabled:before {
-  opacity: .25;
-}
-
-.slick-prev:before,
-.slick-next:before {
-  font-family: 'slick';
-  font-size: 20px;
-  line-height: 1;
-  opacity: .75;
-  color: white;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.slick-prev {
-  left: -25px;
-}
-
-[dir='rtl'] .slick-prev {
-  right: -25px;
-  left: auto;
-}
-
-.slick-prev:before {
-  content: '';
-}
-
-[dir='rtl'] .slick-prev:before {
-  content: '';
-}
-
-.slick-next {
-  right: -25px;
-}
-
-[dir='rtl'] .slick-next {
-  right: auto;
-  left: -25px;
-}
-
-.slick-next:before {
-  content: '';
-}
-
-[dir='rtl'] .slick-next:before {
-  content: '';
-}
-
-/* Dots */
-.slick-slider {
-  margin-bottom: 30px;
-}
-
-.slick-dots {
-  position: absolute;
-  bottom: -45px;
-  display: block;
-  width: 100%;
-  padding: 0;
-  list-style: none;
-  text-align: center;
-}
-
-.slick-dots li {
-  position: relative;
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  margin: 0 5px;
-  padding: 0;
-  cursor: pointer;
-}
-
-.slick-dots li button {
-  font-size: 0;
-  line-height: 0;
-  display: block;
-  width: 20px;
-  height: 20px;
-  padding: 5px;
-  cursor: pointer;
-  color: transparent;
-  border: 0;
-  outline: none;
-  background: transparent;
-}
-
-.slick-dots li button:hover,
-.slick-dots li button:focus {
-  outline: none;
-}
-
-.slick-dots li button:hover:before,
-.slick-dots li button:focus:before {
-  opacity: 1;
-}
-
-.slick-dots li button:before {
-  font-family: 'slick';
-  font-size: 6px;
-  line-height: 20px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 20px;
-  height: 20px;
-  content: '•';
-  text-align: center;
-  opacity: .25;
-  color: black;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.slick-dots li.slick-active button:before {
-  opacity: .75;
-  color: black;
-}
-
-/* Slider */
-.slick-slider {
-  position: relative;
-  display: block;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-touch-callout: none;
-  -khtml-user-select: none;
-  -ms-touch-action: pan-y;
-  touch-action: pan-y;
-  -webkit-tap-highlight-color: transparent;
-}
-
-.slick-list {
-  position: relative;
-  display: block;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-}
-
-.slick-list:focus {
-  outline: none;
-}
-
-.slick-list.dragging {
-  cursor: pointer;
-  cursor: hand;
-}
-
-.slick-slider .slick-track,
-.slick-slider .slick-list {
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-
-.slick-track {
-  position: relative;
-  top: 0;
-  left: 0;
-  display: block;
-}
-
-.slick-track:before,
-.slick-track:after {
-  display: table;
-  content: '';
-}
-
-.slick-track:after {
-  clear: both;
-}
-
-.slick-loading .slick-track {
-  visibility: hidden;
-}
-
-.slick-slide {
-  display: none;
-  float: left;
-  height: 100%;
-  min-height: 1px;
-}
-
-[dir='rtl'] .slick-slide {
-  float: right;
-}
-
-.slick-slide img {
-  display: block;
-}
-
-.slick-slide.slick-loading img {
-  display: none;
-}
-
-.slick-slide.dragging img {
-  pointer-events: none;
-}
-
-.slick-initialized .slick-slide {
-  display: block;
-}
-
-.slick-loading .slick-slide {
-  visibility: hidden;
-}
-
-.slick-vertical .slick-slide {
-  display: block;
-  height: auto;
-  border: 1px solid transparent;
-}
-
-.slick-arrow.slick-hidden {
-  display: none;
-}
-
 /*!
 Animate.css - http://daneden.me/animate
 Licensed under the MIT license - http://opensource.org/licenses/MIT
@@ -1612,133 +1128,131 @@ Copyright (c) 2015 Daniel Eden
 
 @media screen and (max-width: 640px) {
   .commonArticleStyle201811 .sec2 .inner .col2 {
-    justify-content: flex-start;
-    flex-wrap: wrap;
+    display: block;
   }
 }
 
-.commonArticleStyle201811 .sec2 .inner .col2 div {
+.commonArticleStyle201811 .sec2 .inner .col2 li {
   position: relative;
-  width: 48.4%;
+  width: 48.3%;
   box-sizing: border-box;
-  padding: 0 3rem 3rem;
   background: #fff;
 }
 
 @media screen and (max-width: 640px) {
-  .commonArticleStyle201811 .sec2 .inner .col2 div {
-    width: 100%;
-    padding: 7.8125vw 6.25vw 7.8125vw;
+  .commonArticleStyle201811 .sec2 .inner .col2 li {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: auto;
+    padding: 7.8125vw 5.46875vw;
   }
-}
-
-.commonArticleStyle201811 .sec2 .inner .col2 div .imgbox {
-  width: 100%;
-  margin: 3rem auto 0;
 }
 
 @media screen and (max-width: 640px) {
-  .commonArticleStyle201811 .sec2 .inner .col2 div .imgbox {
-    position: absolute;
-    width: 95%;
-    top: -6.25vw;
-    left: 0;
-    right: 0;
-    opacity: 0.15;
-    margin: 0 auto;
-    background: transparent;
+  .commonArticleStyle201811 .sec2 .inner .col2 li.num1 {
+    background-image: url(../images/sec2_img1_sp.png);
   }
 }
 
-.commonArticleStyle201811 .sec2 .inner .col2 div .imgbox img {
+@media screen and (max-width: 640px) {
+  .commonArticleStyle201811 .sec2 .inner .col2 li.num2 {
+    margin-top: 7.8125vw;
+    background-image: url(../images/sec2_img2_sp.png);
+  }
+}
+
+.commonArticleStyle201811 .sec2 .inner .col2 li:after {
+  content: "";
+  display: block;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 68px;
+  height: 68px;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+}
+
+@media screen and (max-width: 640px) {
+  .commonArticleStyle201811 .sec2 .inner .col2 li:after {
+    width: 13.90625vw;
+    height: 13.90625vw;
+    left: auto;
+    right: 1px;
+  }
+}
+
+.commonArticleStyle201811 .sec2 .inner .col2 li.num1:after {
+  background-image: url(../images/sec2_num1.png);
+}
+
+@media screen and (max-width: 640px) {
+  .commonArticleStyle201811 .sec2 .inner .col2 li.num1:after {
+    background-image: url(../images/sp_sec2_num1.png);
+  }
+}
+
+.commonArticleStyle201811 .sec2 .inner .col2 li.num2:after {
+  background-image: url(../images/sec2_num2.png);
+}
+
+@media screen and (max-width: 640px) {
+  .commonArticleStyle201811 .sec2 .inner .col2 li.num2:after {
+    background-image: url(../images/sp_sec2_num2.png);
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .commonArticleStyle201811 .sec2 .inner .col2 li .imgbox {
+    display: none;
+  }
+}
+
+.commonArticleStyle201811 .sec2 .inner .col2 li .imgbox img {
   width: 100%;
 }
 
-.commonArticleStyle201811 .sec2 .inner .col2 div .img_l {
-  margin: 1rem auto 0;
+.commonArticleStyle201811 .sec2 .inner .col2 li .txt {
+  padding: 0 35px 25px;
 }
 
-.commonArticleStyle201811 .sec2 .inner .col2 div h3 {
+@media screen and (max-width: 640px) {
+  .commonArticleStyle201811 .sec2 .inner .col2 li .txt {
+    padding: 0;
+  }
+}
+
+.commonArticleStyle201811 .sec2 .inner .col2 li .txt h3 {
+  margin-bottom: 0.7em;
   color: #385d8a;
   font-size: 2.6rem;
   font-weight: bold;
 }
 
 @media screen and (max-width: 640px) {
-  .commonArticleStyle201811 .sec2 .inner .col2 div h3 {
-    font-size: 4.6875vw;
-    margin: 0 2rem;
+  .commonArticleStyle201811 .sec2 .inner .col2 li .txt h3 {
+    margin-bottom: 1.0em;
+    font-size: 3.0rem;
+    text-align: center;
   }
 }
 
-.commonArticleStyle201811 .sec2 .inner .col2 div p {
+.commonArticleStyle201811 .sec2 .inner .col2 li .txt p {
   font-size: 1.8rem;
-  margin: 3rem 0 0;
   line-height: 1.44444;
 }
 
 @media screen and (max-width: 640px) {
-  .commonArticleStyle201811 .sec2 .inner .col2 div p {
-    font-size: 4.0625vw;
+  .commonArticleStyle201811 .sec2 .inner .col2 li .txt p {
+    font-size: 2.6rem;
     margin: 0;
     line-height: 1.38462;
   }
 }
 
-.commonArticleStyle201811 .sec2 .inner .col2 div p + p {
-  margin-top: 2.5rem;
-}
-
-@media screen and (max-width: 640px) {
-  .commonArticleStyle201811 .sec2 .inner .col2 div + div {
-    margin-top: 3.125vw;
-  }
-}
-
-.commonArticleStyle201811 .sec2 .inner .col2 .num1:after {
-  position: absolute;
-  display: inline-block;
-  content: "";
-  top: 0.5px;
-  left: 1px;
-  width: 6.8rem;
-  height: 6.8rem;
-  background-image: url(../images/sec2_num1.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-@media screen and (max-width: 640px) {
-  .commonArticleStyle201811 .sec2 .inner .col2 .num1:after {
-    left: initial;
-    right: 1px;
-    width: 13.90625vw;
-    height: 13.90625vw;
-    background-image: url(../images/sp_sec2_num1.png);
-  }
-}
-
-.commonArticleStyle201811 .sec2 .inner .col2 .num2:after {
-  position: absolute;
-  display: inline-block;
-  content: "";
-  top: 0.5px;
-  left: 1px;
-  width: 6.8rem;
-  height: 6.8rem;
-  background-image: url(../images/sec2_num2.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-@media screen and (max-width: 640px) {
-  .commonArticleStyle201811 .sec2 .inner .col2 .num2:after {
-    left: initial;
-    right: 1px;
-    width: 13.90625vw;
-    height: 13.90625vw;
-    background-image: url(../images/sp_sec2_num2.png);
-  }
+.commonArticleStyle201811 .sec2 .inner .col2 li .txt p + p {
+  margin-top: 10px;
 }
 
 .commonArticleStyle201811 .sec2 .inner .pageBtns {
@@ -1747,7 +1261,7 @@ Copyright (c) 2015 Daniel Eden
 
 @media screen and (max-width: 640px) {
   .commonArticleStyle201811 .sec2 .inner .pageBtns {
-    margin-top: 4.6875vw;
+    margin-top: 7.03125vw;
   }
 }
 
@@ -2102,6 +1616,7 @@ Copyright (c) 2015 Daniel Eden
   .commonArticleStyle201811 .sec4 .inner p {
     font-size: 3.75vw;
     line-height: 1.66667;
+    margin-bottom: 6.25vw;
   }
 }
 
@@ -2128,17 +1643,24 @@ Copyright (c) 2015 Daniel Eden
   margin-bottom: 0.5rem;
 }
 
+@media screen and (max-width: 640px) {
+  .commonArticleStyle201811 .sec4 .inner .estimate .fontS {
+    font-size: 2.8125vw;
+  }
+}
+
 .commonArticleStyle201811 .sec4 .inner .estimate .inner {
   display: flex;
   font-size: 2.44rem;
   padding-left: 0.5rem;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 640px) {
   .commonArticleStyle201811 .sec4 .inner .estimate .inner {
     justify-content: space-between;
-    font-size: 2.45rem;
-    font-weight: bold;
+    font-size: 2.15rem;
+    padding-left: 0;
   }
 }
 
@@ -2149,16 +1671,24 @@ Copyright (c) 2015 Daniel Eden
 }
 
 .commonArticleStyle201811 .sec4 .inner .estimate .inner div .fontB {
-  font-size: 4.2rem;
+  font-size: 4.8rem;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 640px) {
+  .commonArticleStyle201811 .sec4 .inner .estimate .inner div .fontB {
+    font-size: 6.5625vw;
+  }
 }
 
 .commonArticleStyle201811 .sec4 .inner .estimate .inner div span {
-  display: inline-block;
   font-size: 4.2rem;
 }
 
 .commonArticleStyle201811 .sec4 .inner .estimate .inner div + span {
   margin: 0 5rem;
+  font-size: 4.2rem;
+  font-weight: 500;
 }
 
 @media screen and (max-width: 640px) {
